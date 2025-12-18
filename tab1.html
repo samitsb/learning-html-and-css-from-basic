@@ -1,0 +1,96 @@
+<!--can we create nested list in html? explain with example
+    Yes, we can create nested lists in HTML. A nested list is a list that is contained within another list. This can be done with both ordered lists (`<ol>`) and unordered lists (`<ul>`).
+   
+
+    Example:
+    <ul>
+    <li>Item 1</li>
+    <li>Item 2
+        <ul>
+        <li>Sub-item 2.1</li>
+        <li>Sub-item 2.2</li>
+        </ul>
+    </li>
+    <li>Item 3</li>
+    </ul>
+-->
+<!DOCTYPE html>
+<html lang="en">    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tab 1</title>
+        <style>
+            .sidebar{
+                width: 250px;
+                height: 100vh;
+                background-color: #f07f69;
+                padding: 15px;
+                box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+                float: left;
+            }
+            .menubar{
+                width: 100%;
+                height: 60px;
+                background-color: #f07f69;
+                color: white;
+                display: flex;
+                align-items: center;
+                padding: 0 ;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+            .menubar ul{
+                list-style-type: none;
+                justify-items: right;
+                padding-inline-start: 1170px;
+            }
+            .sec1, .sec2, .sec3{
+                margin-left: 270px;
+                padding: 20px;
+            }
+            .footer{
+                clear: both;
+                text-align: center;
+                padding: 10px;
+                background-color: #f4f4f4;
+                box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="menubar">
+            <h2>Menu Bar / Navigation</h2>
+            <ul>
+                <li>Dashboard</li>
+                <li>Settings</li>
+                <li>Profile</li>
+            </ul>
+        </div>
+        <div class="sidebar">
+            <h2>sidebar menu</h2>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <section class="sec1">
+            <h1>Welcome to Tab 1</h1>
+            <p>This is the content area for Tab 1.</p>
+        </section>
+        <section class="sec2">
+            <h2>Additional Information</h2>
+            <p>Here you can add more details related to Tab 1.</p>
+        </section>
+        <section class="sec3">
+            <h2>Resources</h2>
+            <p>Links and resources related to Tab 1 can be placed here.</p>
+        </section>    
+         
+        
+        
+    </body>
+    <footer>
+        <p class="footer">© 2024 Your Company. All rights reserved.</p>
+    </footer>
+</html>

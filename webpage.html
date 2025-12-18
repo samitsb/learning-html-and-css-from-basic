@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>about me page</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;                
+            }
+            .banner{
+                width: 100%;
+                height: 100px;
+                background-color: #ffc107;
+                display: flex;
+                flex-direction: row;                
+                align-items: center;
+            }
+            .logo{
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                margin-left: 55px;
+            }
+            .company.name{
+                font-style: serif;
+                font-size: 35px;
+                margin-left: 20px;
+                color: white;
+                text-shadow: 2px 2px 4px #000000;
+            }
+            searchbar{
+                margin-left: auto;
+                margin-right: 55px;
+            }
+             .navigation ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                list-style: none;
+                background:  #ffc107;
+                padding: 10px;
+                justify-content: space-around;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            }
+            .navigation a{
+                text-decoration: none;
+                color: #333;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 20px;
+                transition: color 0.3s ease;
+            }
+            .navigation li a:hover{
+                color: #007bff;
+            }
+            .navigation li::after{
+                content: "|";
+                margin-left: 200px;
+                color: #999;
+            }
+            .navigation li:last-child::after{
+                content: "";
+            }
+            .li .a{
+                font-style: serif;
+                font-size: 20px;
+                font-weight: bold;
+                color: white;
+                text-decoration: none;
+                text-shadow: 2px 2px 4px #000000;
+            }
+            .bodycontainer{
+                
+                background-image: url("C:\Users\L O Q\Downloads\tiger-1.jpg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                width: 100%;   
+            }
+            .bannerimg{
+                
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                 
+            }
+            .grid{
+                display: grid;
+                grid-template-rows: repeat(6, 1fr);
+                border:1px solid #000000;
+
+                gap: 2px;
+                
+            }
+            .grid div{
+               
+                background-color: #1A237E;
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+                color: white;
+                text-shadow: 2px 2px 4px #000000;
+                padding: 20px;
+            }
+            .special{
+                grid-row-start: 2;
+                grid-row-end: 5;
+            }
+            .grid .smalldiv{
+                background-color: #1A237E;
+                
+            }
+            .grid2{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                border:1px solid #000000;
+                gap: 5px;
+                margin-top: 20px;
+                
+            }
+             .grid2 div{
+               
+                background-color: #1A237E;                
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+                color: white;
+                text-shadow: 2px 2px 4px #000000;
+            }
+            img{
+                width: 100%;
+                position: relative;
+            }
+            .Time{
+                position: absolute;
+                font-size: 30px;
+                font-weight: bold;
+                text-align: center;
+                margin-left: 90%;
+            }
+            .grid3 {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);                         
+                gap: 10px;
+                margin-top: 20px;
+                background-color: #1A237E;
+                color: white; 
+                text-align: center;
+
+                border: #999;
+                height: 220px;
+            }
+            .grid3 .one {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+            .ingrid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+            .one{
+                padding: 30px;
+
+            }
+            .two{
+                padding: 50px;
+                text-align: center;
+
+                
+            }
+            .three{
+                padding: 30px;
+
+            }
+            .four{
+                padding: 30px;
+
+            }
+            .five{
+                padding: 30px;
+
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="top container">
+            <div class="banner">
+             
+                <img src="C:\Users\L O Q\Downloads\Tiger-main.png" alt="logo" class="logo">
+                <h1 class="company name">The Great Tigers</h1>
+                <searchbar>
+                    <input type="text" placeholder="search...">
+                    <button type="submit">Go</button>
+                </searchbar>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about-Me.html">About Me</a></li>
+                    <li><a href ="assignment.html">assignment</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>    
+        </div>
+        
+        <section class="bodycontainer">
+            <div class="bannerimg">
+                <h2>Welcome to The Great Tigers</h2>
+                <p>Your one-stop destination for all things tiger-related!</p>
+            </div>
+
+
+                
+        </section>
+
+        <section class="grid">
+            <div class="item1">Item 1</div>
+            <div class="item2 special "> 
+                <div class="smalldiv">Small Div 1</div>
+            </div>
+            <div class="item3">Item 3</div>
+            
+            
+            
+
+        </section>
+
+        <section class="grid2">
+            <div class="img1"><img src="C:\Users\L O Q\Downloads\1000_F_624709805_aj6V3xvz6Bm9OldYJCSbebg08Q0EADCB.jpg" alt="photo" ></div>
+            
+            <div ><img src="C:\Users\L O Q\Downloads\1000_F_624709805_aj6V3xvz6Bm9OldYJCSbebg08Q0EADCB.jpg" alt="photo" ></div>
+            <div ><img src="C:\Users\L O Q\Downloads\1000_F_624709805_aj6V3xvz6Bm9OldYJCSbebg08Q0EADCB.jpg" alt="photo" ></div>
+            <div><img src="C:\Users\L O Q\Downloads\1000_F_624709805_aj6V3xvz6Bm9OldYJCSbebg08Q0EADCB.jpg" alt="photo" ></div>
+            <div><img src="C:\Users\L O Q\Downloads\1000_F_624709805_aj6V3xvz6Bm9OldYJCSbebg08Q0EADCB.jpg" alt="photo" ></div>
+            <div><img src="C:\Users\L O Q\Downloads\1000_F_624709805_aj6V3xvz6Bm9OldYJCSbebg08Q0EADCB.jpg" alt="photo" ></div>
+            <div><img src="C:\Users\L O Q\Downloads\1000_F_624709805_aj6V3xvz6Bm9OldYJCSbebg08Q0EADCB.jpg" alt="photo" ></div>
+            <div><img src="C:\Users\L O Q\Downloads\1000_F_624709805_aj6V3xvz6Bm9OldYJCSbebg08Q0EADCB.jpg" alt="photo" ></div>
+            <div><img src="C:\Users\L O Q\Downloads\1000_F_624709805_aj6V3xvz6Bm9OldYJCSbebg08Q0EADCB.jpg" alt="photo" ></div>
+            <div class="Time">16:30       </div>
+
+        </section>
+
+        <selection class="grid3" >
+            <div class="one" >
+                div1
+              <div class="ingrid">
+                <div class="three">div3</div>
+                <div class="four">div4</div>
+              </div>
+              <div class="five">div5</div>
+                
+            </div>
+            <div class="two">
+                div2
+            </div>
+            
+        </selection>
+
+        
+    
+
+        
+        
+        
+
+    </body>
+</html>        
