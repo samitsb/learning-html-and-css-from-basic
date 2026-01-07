@@ -176,6 +176,40 @@
                 padding: 30px;
 
             }
+            @media only screen and (max-width: 600px) {
+                .navigation ul {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .navigation li {
+                    margin-bottom: 10px;
+                }
+                .navigation li::after {
+                    content: "";
+                }
+                h1.company.name {
+                    font-size: 25px;
+                }
+                .font-resize {
+                    font-size: 23px;
+                }
+
+            }
+            @media only screen and (min-width: 600px)and (max-width: 900px) {
+                .navigation ul {
+                    flex-direction: row;
+                    justify-content: space-around; 
+                }
+                .navigation li {
+                    margin-bottom: 0;
+                }
+                h1.company.name {
+                    font-size: 30px;
+                }.font-resize {
+                    font-size: 13px;
+                }               
+            }
+
 
         </style>
     </head>
